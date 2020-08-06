@@ -2010,7 +2010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a3f1fe40da7fc24086cec41deeb41fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentInteractableCube: {fileID: 0}
+  currentInteractableCube: {fileID: 866396108}
 --- !u!114 &1262405585 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3838476432118020029, guid: d51db39ed46eb16419119819e79cc835,
