@@ -96,7 +96,6 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
-    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -280,33 +279,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 63291b5b4f2621245b902de7efb3b172, type: 3}
---- !u!21 &119233135
-Material:
-  serializedVersion: 6
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: Smkgames/Menu/SimpleGrabPassBlur
-  m_Shader: {fileID: 4800000, guid: 83a256425dae224428cb03ca7dad0c71, type: 3}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - _Distortion: 10
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &137623993
 GameObject:
   m_ObjectHideFlags: 0
@@ -511,7 +483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1760703bbd54c04488a8d10600262ab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_PlanePrefab: {fileID: 381762547}
+  m_PlanePrefab: {fileID: 0}
   m_DetectionMode: -1
 --- !u!114 &203539642
 MonoBehaviour:
@@ -546,12 +518,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6013963148463600731, guid: 23362865fead01e4daba07a22ec7508a,
     type: 3}
   m_PrefabInstance: {fileID: 931986719}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &381762547 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3984174212159926071, guid: a4d4c6411ee9f4e63877fb38d9ebe324,
-    type: 3}
-  m_PrefabInstance: {fileID: 3984174211803468996}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &447613154 stripped
 MonoBehaviour:
@@ -696,7 +662,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AttemptUpdate: 1
-  m_MatchFrameRate: 0
 --- !u!4 &811670738
 Transform:
   m_ObjectHideFlags: 0
@@ -1263,7 +1228,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1268551182}
   m_Layer: 0
-  m_Name: ----------------
+  m_Name: '----------------'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1407,9 +1372,8 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1391475744}
   m_Enabled: 1
-  serializedVersion: 10
+  serializedVersion: 9
   m_Type: 1
-  m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -1484,7 +1448,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1413229352}
   m_Layer: 0
-  m_Name: ----------------
+  m_Name: '----------------'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1875,6 +1839,33 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 931986719}
   m_PrefabAsset: {fileID: 0}
+--- !u!21 &1790815299
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Smkgames/Menu/SimpleGrabPassBlur
+  m_Shader: {fileID: 4800000, guid: 83a256425dae224428cb03ca7dad0c71, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Distortion: 10
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1884880080 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6013963148169902029, guid: 23362865fead01e4daba07a22ec7508a,
@@ -2009,7 +2000,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1902516478}
   m_Layer: 0
-  m_Name: ----------------
+  m_Name: '----------------'
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2519,7 +2510,7 @@ PrefabInstance:
     - target: {fileID: 3984174212159926071, guid: a4d4c6411ee9f4e63877fb38d9ebe324,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3984174212159926078, guid: a4d4c6411ee9f4e63877fb38d9ebe324,
         type: 3}
